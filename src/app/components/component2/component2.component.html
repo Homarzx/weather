@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header mx-4 p-3 text-center">
+    <div class="icon icon-shape icon-lg bg-gradient-info shadow text-center border-radius-lg">
+      <i class="material-icons opacity-10" *ngIf="weather.hourly.precipitation[15] == '0'">brightness_medium</i>
+      <i class="material-icons opacity-10" *ngIf="weather.hourly.precipitation[15] != '0'">thunderstorm</i>
+    </div>
+  </div>
+  <div class="card-body pt-0 p-3 text-center text-truncate">
+    <h3 class="text-center mb-0">{{weather.hourly.temperature_2m[15]}} &#176;C</h3>
+    <span class="text-md" *ngIf="weather.hourly.precipitation[15] == '0'">Nubes y sol, con chubascos localizados</span>
+    <span class="text-md" *ngIf="weather.hourly.precipitation[15] != '0'">Cálido, con lluvia ocasional</span>
+    <hr class="horizontal dark my-3">
+    <h4 class="mb-0 text-md">Tarde</h4>
+  </div>
+</div>

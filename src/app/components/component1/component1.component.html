@@ -1,0 +1,33 @@
+<div class="card bg-transparent shadow-xl">
+      <div class="overflow-hidden position-relative border-radius-xl">
+        <!-- <img src="assets/img/illustrations/pattern-tree.svg" class="position-absolute opacity-2 start-0 top-0 w-100 z-index-1 h-100" alt="pattern-tree"> -->
+        <span class="mask bg-gradient-weather opacity-10"></span>
+        <div class="card-body position-relative z-index-1 p-3">
+
+          <div class="d-flex justify-content-between mt-2 mb-2">
+            <div class="me-4">
+              <h5 class="text-golden"><i class="material-icons">location_on</i>Guayaquil</h5>
+            </div>
+            <div>
+              <h5 class="text-golden text-sm  opacity-8 mb-0">{{weather.data_day.time}}</h5>
+            </div>
+          </div>
+          
+          <h2 class="text-golden text-center mt-4 mb-4 pb-2">{{weather.data_day.temperature_max}} &#176;<span>C</span> |  <span class="opacity-6 mx-2">{{weather.data_day.temperature_min}} &#176;C</span></h2>
+          <div class="d-flex justify-content-between">
+            <div class="me-4">
+              <p class="text-golden text-sm opacity-8 mb-0">Nubosidad</p>
+              <h6 class="text-golden mb-0">{{weather.data_day.totalcloudcover_mean}}%</h6>
+            </div>
+            <div class="me-4">
+              <p class="text-golden text-sm opacity-8 mb-0">Viento</p>
+              <h6 class="text-golden mb-0">{{weather.data_day.windspeed_mean}} km/h</h6>
+            </div>
+            <div>
+              <p class="text-golden text-sm opacity-8 mb-0">Prob. de precipitaciones</p>
+              <h6 class="text-golden mb-0">{{weather.data_day.precipitation_probability}}%</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
